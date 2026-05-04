@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-gray-950 text-white font-sans m-0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold py-2.5 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/25 inline-block text-center no-underline;
+  }
+  .btn-gold {
+    @apply bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-gray-900 font-bold py-2.5 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-amber-500/25 inline-block text-center no-underline;
+  }
+  .btn-outline {
+    @apply border border-purple-500/50 text-purple-400 hover:bg-purple-500/10 font-semibold py-2 px-5 rounded-lg transition-all duration-300 inline-block text-center no-underline;
+  }
+  .card {
+    @apply bg-gray-900/80 backdrop-blur-sm border border-gray-800 rounded-xl overflow-hidden hover:border-purple-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10 hover:-translate-y-1;
+  }
+  .badge-free {
+    @apply bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold px-2.5 py-1 rounded-full;
+  }
+  .badge-paid {
+    @apply bg-amber-500/20 text-amber-400 border border-amber-500/30 text-xs font-bold px-2.5 py-1 rounded-full;
+  }
+  .badge-mixed {
+    @apply bg-blue-500/20 text-blue-400 border border-blue-500/30 text-xs font-bold px-2.5 py-1 rounded-full;
+  }
+}
